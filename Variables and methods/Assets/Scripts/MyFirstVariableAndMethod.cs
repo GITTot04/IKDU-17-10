@@ -17,6 +17,10 @@ public class MyFirstVariableAndMethod : MonoBehaviour
         Debug.Log("My current age: " + currentAge);
         Debug.Log("My age next year: " + IncreaseAge(currentAge));
         Debug.LogFormat("My age in {0} years: " + IncreaseAge(currentAge, ageIncrease), ageIncrease);
+        ageIncrease = 7;
+        Debug.LogFormat("My age in {0} years: " + IncreaseAge(currentAge, ageIncrease), ageIncrease);
+        ageIncrease = 28;
+        Debug.LogFormat("My age in {0} years: " + IncreaseAge(currentAge, ageIncrease), ageIncrease);
 
         /*
         Debug.LogFormat("a={0} b={1}", a, b);
